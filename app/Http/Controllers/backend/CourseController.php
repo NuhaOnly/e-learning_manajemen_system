@@ -40,7 +40,7 @@ class CourseController extends Controller
     public function create()
     {
         $all_categories = Category::all();
-        return view('backend.instructor.course.create', compact('all_categories'));
+        return view('backend.admin.course.create', compact('all_categories'));
     }
 
     /**

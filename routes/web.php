@@ -67,7 +67,6 @@ Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->name('ad
     Route::resource('slider', SliderController::class);
 
      /* control Course  */
-
     Route::resource('course', AdminCourseController::class);
     Route::post('/course-status', [AdminCourseController::class, 'courseStatus'])->name('course.status');
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Course;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class AdminCourseController extends Controller
@@ -37,7 +38,8 @@ class AdminCourseController extends Controller
      */
     public function create()
     {
-        //
+        $all_categories = Category::all();
+        return view('backend.admin.course.create', compact('all_categories'));
     }
 
     /**

@@ -30,6 +30,7 @@
         <!--end breadcrumb-->
         <div style="display: flex; align-items:center; justify-content:space-between">
             <h6 class="mb-0 text-uppercase">All Course</h6>
+            <a href="{{route('admin.course.create')}}" class="btn btn-primary">Add Course</a>
 
         </div>
 
